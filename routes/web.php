@@ -23,3 +23,4 @@ Auth::routes([
                 'verify' => false]);
 Route::post('/posts','PostController@store')->name('posts.store')->middleware('auth');
 Route::get('/posts','PostController@create')->middleware('auth');
+Route::delete('/posts/{id}','PostController@destroy')->name('posts.destroy')->middleware('auth');

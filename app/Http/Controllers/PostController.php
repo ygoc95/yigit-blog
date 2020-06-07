@@ -40,6 +40,7 @@ class PostController extends Controller
 
         $post = new Post();
         $post->title = $request->title_input;
+        $post->summary = $request->summary_input;
         $post->md_summary = GitDown::parseAndCache($request->desc_body) ;
         $post->save();
         return redirect() -> route('posts.index');
@@ -88,8 +89,10 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $post->delete();
+        return redirect() -> route('posts.index');
     }
 }

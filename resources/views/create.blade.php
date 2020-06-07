@@ -1,10 +1,14 @@
 @extends('layout')
 @section('container')    
-<form action="/posts" method="POST">
+<form action={{route('posts.store')}} method="POST">
     @csrf
     <div class="form-group">
         <label for="title_input">Title</label>
         <input type="text" name="title_input" class="form-control" id="title_input">
+    </div>
+    <div class="form-group">
+        <label for="summary_input">Summary</label>
+        <input type="text" name="summary_input" class="form-control" id="summary_input">
     </div>
     <div class="form-group">
         <label for="body">Description</label>

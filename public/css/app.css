@@ -1,0 +1,55 @@
+
+body{
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #1F2833;
+    color: #66FCf1 !important;
+
+}
+p{
+    color: #C5C6C7;
+}
+#navbar_id{
+   
+    background-color: #1F2833 !important;
+    
+}
+.navbar-brand {
+    color: #66FCf1 !important;
+}
+.nav-link {
+    color: #66FCf1 !important;
+}
+.card{
+    background-color:#0B0C10 !important;
+}
+.btn-primary{
+    background-color: #66FCf1;
+    color: #1F2833 !important;
+
+}
+.btn-primary:hover{
+    color: rgb(44, 56, 71) !important;
+    background-color: rgb(67, 182, 174);
+
+}
+.editor-toolbar{
+    color: #66FCf1 !important;
+
+}
+.title{
+    color: #66FCf1 !important;
+
+}
+.profile_img{
+    width: 100px;
+    height: 100px;
+}
+.side-div{
+    width: 200px;
+}
+.fa{
+    color: #66FCf1;
+}
+.fa:hover{
+    color: rgb(78, 209, 200);
+}
