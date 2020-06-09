@@ -32,6 +32,9 @@ p{
     background-color: rgb(67, 182, 174);
 
 }
+hr{
+    background-color:rgb(67, 182, 174) ;
+}
 .editor-toolbar{
     color: #66FCf1 !important;
 
@@ -45,8 +48,17 @@ p{
     height: 100px;
 }
 .side-div{
-    width: 200px;
+    text-align: justify;
+    text-align: center;
 }
+@media (max-width: 992px) and (min-width:768px){
+    .side-div{
+        margin-left: 5px;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
 .fa{
     color: #66FCf1;
 }
