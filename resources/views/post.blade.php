@@ -2,6 +2,9 @@
 @section('title')
     {{$post->title}} - Yigit Goc Blog
 @endsection
+@section('meta-description')
+{{$post->title}} - Yigit Goc Blog
+@endsection
 @section('container')
 
     <h1 class="title">{{$post->title}}</h1>

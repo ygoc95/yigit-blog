@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="@yield('meta-description','Yigit Goc Blog - Junior Laravel developer that likes to record what he learns.')">
     <title>@yield('title')</title>
 </head>
 <body>
